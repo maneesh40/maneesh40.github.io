@@ -16,9 +16,10 @@
 <title>Maneesh Punetha : Homepage</title>
 <link rel="shortcut icon" href="img/favicon.ico" />
 <link href="defaultstyle.css" rel="stylesheet" media="screen" />
+<script type="text/javascript" src="slideshow.js"></script>
 <script type="text/javascript" src="branding.js"></script>
 <script type="text/JavaScript" src="http://www.colorado.edu/templates/faculty-template/js/curvycorners.js"></script>
-
+<meta charset="UTF-8">
 </head>
 
 <body>
@@ -33,30 +34,36 @@
             <li><a href="Teaching.html">Teaching</a><li/>
             <li><a href="CV.html">CV</a></li>
             <li><a href="About.html">About</a></li>
-			<li><a href="Publication.html">Publication</a></li>
-			<li><a href="Recent.html">Recent</a></li>
+			<li><a href="Publications.html">Publications</a></li>
+			<li><a href="Events & News.html">Events & News</a></li>
             <li><a href="Contact Me.html">Contact Me</a></li>
 	    
         </ul>
     </div>
 <!--Introduction-->
-    <div id="banner">
-	<img src="img/cover.jpg" title="photo1" id="fac_photo1" width="1000px"/>
+    <!--<div id="banner">-->
+	<div id="banner" class="slides"><img src="img/cover.jpg" width="1000px"/>
+
     	<div id="name" style="transform: translate(-5%, -50%)">
-    	<p style="font-size:20px"><b>Dr. Maneesh Punetha</b></p>
-    	<p style="font-size:20px"><small>Senior Research Fellow</small></p>	
-    	<p style="font-size:20px"><small><a href="http://iitk.ac.in/me/" target="_blank"><font color="white">Department of Mechanical Engineering</font></a></small></p>
-		<p style="font-size:20px"><small><a href="http://iitk.ac.in/" target="_blank"><font color="white">Indian Institute of Technology Kanpur</font></a></small></p>
-		<p style="font-size:20px"><small>Kanpur (208016), UP, India</small></p>
-		<p style="font-size:20px"><small>E-mail: maneeshp@iitk.ac.in</small></p>
-    	</div>
+    	<p style="font-size:20px"><b><font color="white">Dr. Maneesh Punetha <small>(डॉ. मनीष पुनेठा)</small></font></b></p>
+    	<p style="font-size:20px"><small><font color="white">Postdoctoral Fellow</font></small></p>	
+    	<p style="font-size:20px"><small><a href="https://www.kth.se/en/sci/skolan-for-teknikvetenskap-1.795005" target="_blank"><font color="white">School of Engineering Sciences</font></a></small></p>
+		<p style="font-size:20px"><small><a href="https://www.kth.se/en" target="_blank"><font color="white">KTH Royal Institute of Technology</font></a></small></p>
+		<p style="font-size:20px"><small><font color="white">Stockholm 114 28, Sweden</font></small></p>
+		<p style="font-size:20px"><small><font color="white">E-mail: maneesh40@gmail.com</font></small></p>
+		</div>
     </div>
-	    <div id="Container">
-			<div id="content" style="align:Right;transform: translate(-0%, 2%)">
-				<table>
-				<tr>
-				<td><img src="img/news.jpg" title="photo" width="80px" /></td>
-				<td style="width:1200px;font-size:13px"><font color="Blue"><marquee direction="left"><a href="Recent.html"><b><font color="blue">Recently joined as Senior Research Fellow on August 03, 2020, with Prof. Sameer Khandekar, Mechanical Engineering Department, IIT Kanpur</font></b></a></marquee></font><td>
+	<!--<div id="banner" class="slides"><img src="img/cover.jpg" width="1000px"/><div id="bcaption">Caption 2</div></div>
+	<div id="banner" class="slides"><img src="img/cover.jpg" width="1000px"/><div id="bcaption">Caption 3</div></div>
+	<script>w3.slideshow(".slides", 2000);</script>	 <!--2000 is time period of flashing
+    </div>-->
+	    <div id="movingcontent">
+			<div id="movingcontent" style="align:Right;transform: translate(-0%, 0%)">
+				<table style="width:1000px">
+				<tr style="height:65px;padding:50px;background-color:white">
+				<td style="width:85px;vertical-align:bottom"><a href="Events & News.html"><img src="img/news.jpg" title="photo" width="80px" /></a></td>
+				<td style="width:875px;font-size:13px;vertical-align:center"><font color="Blue"><marquee direction="left" Scrollamount=4><a href="Events & News.html"><b><font color="blue">Started working as Postdoctoral Fellow in Nuclear Power Safety Division, Department of Physics, School of Engineering Sciences, KTH Royal Institute of Technology from June 21, 2021</font></b></a></marquee></font></td>
+				<td style="width:40px;font-size:13px">&nbsp </td>
 				</tr>
 				</table>
 			</div>
@@ -69,15 +76,17 @@
         		</div>
 		        
 				<p style="margin-left:10px;margin-right:250px">
-                  I am currently working as an Senior Research Fellow in the Department of Mechanical Engineering at Indian Institute of Technology Kanpur with <a href="http://home.iitk.ac.in/~samkhan/" target="_blank">Professor Sameer Khandekar</a>. I completed my PhD in Mechanical Engineering from Indian Institute of Technology Kanpur in July, 2020. I obtained my M.Tech in Thermal System Design from Sardar Vallabhbhai Natioal Institure of Technology in 2014. I belongs to a beautiful valley city, Pithoragarh, in the north east of Uttrakhand. (See <a href="https://www.euttaranchal.com/tourism/photos/pithoragarh-photos.php" target="_blank">Photos</a>).<br/><br/>
+                I am currently working as a Postdoctoral Fellow with <a href="https://www.kth.se/profile/bechta?l=en" target="_blank">Professor Bechta</a>, <a href="https://www.kth.se/profile/walterv?l=en">Dr. Villanueva</a> and <a href="https://www.kth.se/profile/weimin?l=en" target="_blank">Dr. Ma</a> in the Department of Physics, School of Engineering Sciences, KTH Royal Institute of Technology, Stockholm, Sweden. In past, I worked as a Senior Research Fellow with <a href="http://home.iitk.ac.in/~samkhan/" target="_blank">Professor Sameer Khandekar</a> in the Department of Mechanical Engineering at Indian Institute of Technology Kanpur, India. I completed my Ph.D. in Mechanical Engineering from Indian Institute of Technology Kanpur, India in July, 2020. Before that, I obtained my M.Tech. in Thermal System Design from Sardar Vallabhbhai National Institute of Technology, Surat, India in July, 2014. I am passionate about doing experimental work in the field of multiphase flow and heat transfer (particularly in phase change), which is the backbone of future electronics and energy systems. In particular, I am interested to develop imperative engineering solutions by considering the future need of our society, with special focus on safety and environment.<br/><br/>
 
-                    I love to be creative in my work, be it academic or extra curricular. I am passionate about doing experimental work in the field of multiphase flow and heat transfer (particularly in phase change), which is the backbone of future electronics and energy systems. In particular, I am interested to develop novel engineering solutions to meet the challenges of energy and cooling system across the world, with special focus on safety and environment.<br/><br/>    
-					To know more:
-					<ul>
-					<li type=disc> <a href="https://scholar.google.co.in/citations?user=8GQ6AHwAAAAJ&hl=en" target="_blank"><b>Google Scholar Profile</b></a>.
-					<li type=disc> <a href="https://www.researchgate.net/profile/Maneesh_Punetha" target="_blank"><b>ResearchGate Profile</b></a>.
-					<li type=disc> <a href="Research.html"><b>Current Research Activity</b></a>.
-					</ul>              
+				I belong to a beautiful valley city, Pithoragarh, in the north east of Uttrakhand, India. (See <a href="https://www.euttaranchal.com/tourism/photos/pithoragarh-photos.php" target="_blank">Photos</a>). I love to be creative in my work, be it academic or extra curricular.<br/><br/>    
+				To know more about my work:
+				<ul>
+				<li type=disc> <a href="Research.html"><b>Current Research Activity</b></a>
+				<li type=disc> <a href="Publications.html"><b>Publications</b></a>
+				<li type=disc> <a href="https://scholar.google.co.in/citations?user=8GQ6AHwAAAAJ&hl=en" target="_blank"><b>Google Scholar Profile</b></a>
+				<li type=disc> <a href="https://www.researchgate.net/profile/Maneesh_Punetha" target="_blank"><b>ResearchGate Profile</b></a>
+
+				</ul>              
 				</p>
 
 
@@ -86,7 +95,8 @@
     </div>
 	
     <div id="footer">
-        <a href="https://www.facebook.com/maneesh40" style="display: inline-block;" target="_blank"><img src="img/fb.png"  /></a>
+        <a href="https://www.linkedin.com/in/maneeshpunetha/" style="display: inline-block;" target="_blank"><img src="img/linkedin.png" height="30px" /></a>
+        <a href="https://www.facebook.com/maneesh40" style="display: inline-block;" target="_blank"><img src="img/facebook.png " height="30px" /></a>
         <p style="display: inline-block;float:right"></p>
     </div>
 </div>
