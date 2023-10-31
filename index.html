@@ -12,6 +12,28 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <script>
+    // Increment the visitor count
+    function incrementCount() {
+      if (localStorage.getItem('visitorCount')) {
+        var count = parseInt(localStorage.getItem('visitorCount'));
+        count++;
+        localStorage.setItem('visitorCount', count);
+      } else {
+        localStorage.setItem('visitorCount', 1);
+      }
+    }
+
+    // Display the visitor count
+    function displayCount() {
+      var count = localStorage.getItem('visitorCount');
+      document.getElementById('visitorCount').innerHTML = count;
+    }
+  </script>
+</head>
+<body onload="incrementCount(); displayCount();"></body>
+
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Maneesh Punetha : Homepage</title>
 <link rel="shortcut icon" href="img/favicon.ico" />
@@ -98,11 +120,18 @@
 		</div>
     </div>
 	
-    <div id="footer">
-        <a href="https://www.linkedin.com/in/maneeshpunetha/" style="display: inline-block;" target="_blank"><img src="img/linkedin.png" height="30px" /></a>
-        <a href="https://www.facebook.com/maneesh40" style="display: inline-block;" target="_blank"><img src="img/facebook.png " height="30px" /></a>
-        <p style="display: inline-block;float:right"></p>
-    </div>
+	<div id="footer">
+		<a href="https://www.linkedin.com/in/maneeshpunetha/" style="display: inline-block;" target="_blank"><img src="img/linkedin.png" height="20px" /></a>
+		<a href="https://www.facebook.com/maneesh40" style="display: inline-block;" target="_blank"><img src="img/facebook.png " height="20px" /></a>
+		<span style="float: right;">
+			<a>visitor#</a>
+			<span id="visitorCount"></span>
+		</span>
+		<p style="display: inline-block; float: right;"></p>		
+	</div>
+	
 </div>
 </body>
+
+
 </html>
