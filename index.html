@@ -11,27 +11,6 @@
 </script>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <script>
-    // Increment the visitor count
-    function incrementCount() {
-      if (localStorage.getItem('visitorCount')) {
-        var count = parseInt(localStorage.getItem('visitorCount'));
-        count++;
-        localStorage.setItem('visitorCount', count);
-      } else {
-        localStorage.setItem('visitorCount', 1);
-      }
-    }
-
-    // Display the visitor count
-    function displayCount() {
-      var count = localStorage.getItem('visitorCount');
-      document.getElementById('visitorCount').innerHTML = count;
-    }
-  </script>
-</head>
-<body onload="incrementCount(); displayCount();"></body>
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -119,7 +98,35 @@
 			</div>
 		</div>
     </div>
-	
+<head>
+    <script>
+        // Function to increment the visitor count
+        function incrementVisitorCount() {
+            // Retrieve the current count from local storage
+            var count = localStorage.getItem('visitorCount');
+            
+            // Check if the count exists in local storage
+            if (count) {
+                // Increment the count by 1
+                count = parseInt(count) + 1;
+            } else {
+                // Set the count to 1
+                count = 1;
+            }
+            
+            // Update the count in local storage
+            localStorage.setItem('visitorCount', count);
+            
+            // Display the count on the webpage
+            document.getElementById('visitorCount').textContent = count;
+        }
+        
+        // Attach the incrementVisitorCount function to the window object
+        window.incrementVisitorCount = incrementVisitorCount;
+    </script>
+</head>
+<body onload="incrementVisitorCount(); displayCount();"></body>
+
 	<div id="footer">
 		<a href="https://www.linkedin.com/in/maneeshpunetha/" style="display: inline-block;" target="_blank"><img src="img/linkedin.png" height="20px" /></a>
 		<a href="https://www.facebook.com/maneesh40" style="display: inline-block;" target="_blank"><img src="img/facebook.png " height="20px" /></a>
